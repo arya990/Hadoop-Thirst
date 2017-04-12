@@ -106,7 +106,7 @@ yum install -y httpd
 service httpd start && chkconfig httpd on
 ```  
   
-###6. Got to netwroking/Firewall rules and create firewall rule. Make sure you add the below rule in networking/firewall_rules ###  
+### 6. Got to netwroking/Firewall rules and create firewall rule. Make sure you add the below rule in networking/firewall_rules ###  
 
 ```vi
 name: my_rule  
@@ -147,81 +147,81 @@ Use the ip address of name node and type copy it in the browser search box with 
 ```  
   
     
-[GitHub](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/cdh.PNG)
+![GitHub Logo](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/cdh.PNG)
 
 
 #### 8.Login Screen ####  
   
-[GitHub](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/gvc.PNG)
+![GitHub Logo](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/gvc.PNG)
   
 
-[GitHub](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/1.PNG)  
+![GitHub Logo](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/1.PNG)  
 
 
-[GitHub](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/2.PNG)  
+![GitHub Logo](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/2.PNG)  
 
 
-[GitHub](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/3.PNG)  
+![GitHub Logo](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/3.PNG)  
 
 
-[GitHub](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/4.PNG)  
+![GitHub Logo](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/4.PNG)  
 
 
-[GitHub](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/5.PNG)  
+![GitHub Logo](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/5.PNG)  
 
 
-[GitHub](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/6.PNG)  
+![GitHub Logo](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/6.PNG)  
 
 
-[GitHub](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/7.PNG)  
+![GitHub Logo](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/7.PNG)  
 
 
-[GitHub](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/8.PNG)  
+![GitHub Logo](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/8.PNG)  
 
 
-[GitHub](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/9.PNG)  
+![GitHub Logo](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/9.PNG)  
 
 
-[GitHub](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/10.PNG)  
+![GitHub Logo](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/10.PNG)  
 
 
-[GitHub](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/11.PNG)  
+![GitHub Logo](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/11.PNG)  
 
 
-[GitHub](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/12.PNG)  
+![GitHub Logo](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/12.PNG)  
 
 
-[GitHub](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/13.PNG)  
+![GitHub Logo](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/13.PNG)  
 
 
-[GitHub](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/14.PNG)  
+![GitHub Logo](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/14.PNG)  
 
 
-[GitHub](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/15.PNG)  
+![GitHub Logo](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/15.PNG)  
 
 
-[GitHub](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/16.PNG)  
+![GitHub Logo](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/16.PNG)  
 
 
-[GitHub](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/17.PNG)  
+![GitHub Logo](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/17.PNG)  
 
 
-[GitHub](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/18.PNG)  
+![GitHub Logo](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/18.PNG)  
 
 
-[GitHub](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/19.PNG)  
+![GitHub Logo](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/19.PNG)  
 
 
-[GitHub](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/20.PNG)  
+![GitHub Logo](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/20.PNG)  
 
 
-[GitHub](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/21.PNG)  
+![GitHub Logo](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/21.PNG)  
 
 
-[GitHub](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/22.PNG)  
+![GitHub Logo](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/22.PNG)  
 
 
-[GitHub](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/23.PNG)  
+![GitHub Logo](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/23.PNG)  
 
  
 
