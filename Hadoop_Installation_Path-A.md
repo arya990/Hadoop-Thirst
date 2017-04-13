@@ -155,73 +155,112 @@ Use the ip address of name node and type copy it in the browser search box with 
 ![GitHub Logo](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/gvc.PNG)
   
 
+
+CDH window  
 ![GitHub Logo](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/1.PNG)  
 
 
+  
+Give the nodes available  
 ![GitHub Logo](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/2.PNG)  
 
 
+
+  
+Specify the particular hosts    
 ![GitHub Logo](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/3.PNG)  
 
 
+  
+    
+Cluster Installation starts and select the repository  
 ![GitHub Logo](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/4.PNG)  
 
+  
 
+  
+Installing JDK    
 ![GitHub Logo](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/5.PNG)  
 
 
+  
+  
+Do Not Click Single User mode     
 ![GitHub Logo](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/6.PNG)  
 
 
+  
+
+Give the password which u created at the time of creating the instances   
 ![GitHub Logo](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/7.PNG)  
 
+  
 
+  
+Installation  
 ![GitHub Logo](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/8.PNG)  
 
-
+  
+    
+Installing Parcels      
 ![GitHub Logo](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/9.PNG)  
 
 
+  
+  
+Complete Installation files descriptions and warnings to be rectified  
 ![GitHub Logo](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/10.PNG)  
 
-
 ![GitHub Logo](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/11.PNG)  
-
-
+  
 ![GitHub Logo](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/12.PNG)  
+  
 
+  
 
+Select Core Hadoop    
 ![GitHub Logo](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/13.PNG)  
 
-
+  
+  
+  
+Customize the nodes where u want to assign different applications so that all application will not be installed in single node and create overhead    
 ![GitHub Logo](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/14.PNG)  
-
-
+  
 ![GitHub Logo](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/15.PNG)  
-
-
+  
+  
+  
+  
+Database Setup. Here if select embedded Database which describes PATH-A installion. If u select Custom Database it means PATH-B installation where u have to install each database externally from Cloudera website  
 ![GitHub Logo](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/16.PNG)  
 
-
 ![GitHub Logo](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/17.PNG)  
-
-
+  
+  
+  
+  
+review if any necessary changes are required like changing the directory or directory names  
 ![GitHub Logo](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/18.PNG)  
-
 
 ![GitHub Logo](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/19.PNG)  
 
-
 ![GitHub Logo](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/20.PNG)  
 
-
+  
+  
+  
+Installation completed    
 ![GitHub Logo](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/21.PNG)  
 
-
+  
+  
+  
+Cloudera Home    
 ![GitHub Logo](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/22.PNG)  
 
 
-![GitHub Logo](https://github.com/arya990/Hadoop-Thirst/blob/master/cloudera/23.PNG)  
+
 
  
 
