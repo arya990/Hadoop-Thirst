@@ -55,120 +55,107 @@ mvn -Psparkbench -Dspark=1.6 -Dscala=2.11 clean package
 
 ### Setup
 
-    * Supported Hadoop version: Apache Hadoop 2.x, CDH5.x, HDP
+* Supported Hadoop version: Apache Hadoop 2.x, CDH5.x, HDP
 
-      * Start HDFS, Yarn in the cluster.
+* Start HDFS, Yarn in the cluster.
 
+### Configure `hadoop.conf`
 
-      ### Configure `hadoop.conf`
+Create and edit `conf/hadoop.conf`：
+```sh
+cp conf/hadoop.conf.template conf/hadoop.conf
+```
+####Set the below properties properly:
 
-      Create and edit `conf/hadoop.conf`：
-      ```sh
-      cp conf/hadoop.conf.template conf/hadoop.conf
-      ```
+Property        |      Meaning
+----------------|--------------------------------------------------------
+hibench.hadoop.home     |      The Hadoop installation location
+hibench.hadoop.executable  |   The path of hadoop executable. For Apache Hadoop, it is /YOUR/HADOOP/HOME/bin/hadoop
+hibench.hadoop.configure.dir | Hadoop configuration directory. For Apache Hadoop, it is /YOUR/HADOOP/HOME/etc/hadoop
+hibench.hdfs.master       |    The root HDFS path to store HiBench data, i.e. hdfs://localhost:8020/user/username
+hibench.hadoop.release    |    Hadoop release provider. Supported value: apache, cdh5, hdp
 
-      ####Set the below properties properly:
+```sh
+hibench.hadoop.home             /opt/cloudera/parcels/CDH/lib/hadoop
+hibench.hadoop.executable       /usr/bin/hadoop
+hibench.hadoop.configure.dir    /etc/hadoop/conf
+hibench.hdfs.master             /user/yeshwanth43/
+hibench.hadoop.release          cdh5
+hibench.slaves.hostnames        datanode2,namenode
+hibench.master.hostnames        datanode1
+```
+### Micro Benchmarks
 
-      Property        |      Meaning
-      ----------------|--------------------------------------------------------
-      hibench.hadoop.home     |      The Hadoop installation location
-      hibench.hadoop.executable  |   The path of hadoop executable. For Apache Hadoop, it is /YOUR/HADOOP/HOME/bin/hadoop
-      hibench.hadoop.configure.dir | Hadoop configuration directory. For Apache Hadoop, it is /YOUR/HADOOP/HOME/etc/hadoop
-      hibench.hdfs.master       |    The root HDFS path to store HiBench data, i.e. hdfs://localhost:8020/user/username
-      hibench.hadoop.release    |    Hadoop release provider. Supported value: apache, cdh5, hdp
+To run a `wordcount`
 
-      ```sh
-      hibench.hadoop.home             /opt/cloudera/parcels/CDH/lib/hadoop
-      hibench.hadoop.executable       /usr/bin/hadoop
-      hibench.hadoop.configure.dir    /etc/hadoop/conf
-      hibench.hdfs.master             /user/yeshwanth43/
-      hibench.hadoop.release          cdh5
-      hibench.slaves.hostnames        datanode2,namenode
-      hibench.master.hostnames        datanode1
-      ```
+```sh
+./bin/workloads/micro/wordcount/prepare/prepare.sh
+```
+```sh
+./bin/workloads/micro/wordcount/hadoop/run.sh
+```
 
-      ### Micro Benchmarks
+To run a `sort`
+```sh
+./bin/workloads/micro/sort/prepare/prepare.sh
+```
+```sh
+./bin/workloads/micro/sort/hadoop/run.sh
+```
+To run a `terasort`
+```sh
+./bin/workloads/micro/terasort/prepare/prepare.sh
+```
+```sh
+./bin/workloads/micro/terasort/hadoop/run.sh
+```
+To run a `sleep`
+```sh
+./bin/workloads/micro/sleep/prepare/prepare.sh
+```
+```sh
+./bin/workloads/micro/sleep/hadoop/run.sh
+```
+To run a `dfsioe`
+```sh
+./bin/workloads/micro/dfsioe/prepare/prepare.sh
+```
+```sh
+./bin/workloads/micro/dfsioe/hadoop/run.sh
+```
+### Websearch Benchmarks
+```sh
+./HiBench/bin/workloads/websearch/nutchindexing/prepare/prepare.sh
+```
+```sh
+./HiBench/bin/workloads/websearch/nutchindexing/hadoop/run.sh
+```
 
-      To run a `wordcount`
+### SQL
+To run a `sql`
+```sh
+./bin/workloads/sql/scan/prepare/prepare.sh
+```
+```sh
+./bin/workloads/sql/scan/hadoop/run.sh
+```
+```sh
+./bin/workloads/sql/join/prepare/prepare.sh
+```
+```sh
+./bin/workloads/sql/join/hadoop/run.sh
+```
+```sh
+./bin/workloads/sql/aggregation/prepare/prepare.sh
+```
+```sh
+./bin/workloads/sql/aggregation/hadoop/run.sh
+```
+### View the report
 
-      ```sh
-      ./bin/workloads/micro/wordcount/prepare/prepare.sh
-      ```
-      ```sh
-      ./bin/workloads/micro/wordcount/hadoop/run.sh
-      ```
+The `<HiBench_Root>/report/hibench.report` is a summarized workload report, including workload name, execution duration, data size, throughput per cluster, throughput per node.
 
-      To run a `sort`
-
-      ```sh
-      ./bin/workloads/micro/sort/prepare/prepare.sh
-      ```
-      ```sh
-      ./bin/workloads/micro/sort/hadoop/run.sh
-      ```
-      To run a `terasort`
-
-      ```sh
-      ./bin/workloads/micro/terasort/prepare/prepare.sh
-      ```
-      ```sh
-      ./bin/workloads/micro/terasort/hadoop/run.sh
-      ```
-      To run a `sleep`
-
-      ```sh
-      ./bin/workloads/micro/sleep/prepare/prepare.sh
-      ```
-      ```sh
-      ./bin/workloads/micro/sleep/hadoop/run.sh
-      ```
-      To run a `dfsioe`
-
-      ```sh
-      ./bin/workloads/micro/dfsioe/prepare/prepare.sh
-      ```
-      ```sh
-      ./bin/workloads/micro/dfsioe/hadoop/run.sh
-      ```
-
-      ### Websearch Benchmarks
-
-      ```sh
-      ./HiBench/bin/workloads/websearch/nutchindexing/prepare/prepare.sh
-      ```
-      ```sh
-      ./HiBench/bin/workloads/websearch/nutchindexing/hadoop/run.sh
-      ```
-
-      ### SQL
-
-      To run a `sql`
-
-      ```sh
-      ./bin/workloads/sql/scan/prepare/prepare.sh
-      ```
-      ```sh
-      ./bin/workloads/sql/scan/hadoop/run.sh
-      ```
-
-      ```sh
-      ./bin/workloads/sql/join/prepare/prepare.sh
-      ```
-      ```sh
-      ./bin/workloads/sql/join/hadoop/run.sh
-      ```
-      ```sh
-      ./bin/workloads/sql/aggregation/prepare/prepare.sh
-      ```
-      ```sh
-      ./bin/workloads/sql/aggregation/hadoop/run.sh
-      ```
-
-      ### View the report
-
-      The `<HiBench_Root>/report/hibench.report` is a summarized workload report, including workload name, execution duration, data size, throughput per cluster, throughput per node.
-
-      ```sh
-      /HiBench/report
-      ```
+```sh
+/HiBench/report
+```
 
