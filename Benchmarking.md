@@ -65,7 +65,7 @@ Create and edit `conf/hadoop.conf`：
 ```sh
 cp conf/hadoop.conf.template conf/hadoop.conf
 ```
-####Set the below properties properly:
+#### Set the below properties properly:
 
 Property        |      Meaning
 ----------------|--------------------------------------------------------
