@@ -3,16 +3,16 @@
 Installing a single node Hadoop cluster on Ubuntu
 
 ### Update the source list
-
-'''sh
+ 
+```sh
 sudo apt-get update
 ```
 
 ### Installing JAVA
-
+  
 Hadoop framework is written in Java
 
-'''sh
+```sh
 sudo apt-get install default-jdk
 ```
 
@@ -74,6 +74,7 @@ we need to find the path where Java has been installed to set the JAVA_HOME envi
 
 ```sh
 update-alternatives --config java
+```  
 
 ```sh
 vi ~/.bashrc
